@@ -50,6 +50,7 @@
         viewsMutableArray = [@[] mutableCopy];
         if (imgArr!=nil) {
             [self createViewsWithImageArray:imgArr];
+            NSLog(@"1111111");
 
         }
     }
