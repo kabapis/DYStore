@@ -7,6 +7,7 @@
 //
 
 #import "MyProfileController.h"
+#import "LoginController.h"
 
 @interface MyProfileController ()
 
@@ -16,12 +17,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = RandomRGB;
+    
+    NSString *user = @"";
+    if ([user isEqualToString:@""]) {
+        [self loginBtnClick];
+    }
+    
+    
+    self.view.backgroundColor = RGB(213, 213, 213);
+    
+    UIButton *loginBtn = [[UIButton alloc] init];
+    [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+    loginBtn.frame = CGRectMake(20, 20, 100, 30);
+    [self.view addSubview:loginBtn];
+    
+    [loginBtn addTarget:self action:@selector(loginBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)loginBtnClick{
+    LoginController *login = [[LoginController alloc] init];
+    login.title = @"登录";
+    [self.navigationController pushViewController:login animated:YES];
+    [self.navigationController hidesBottomBarWhenPushed];
 }
 
 
