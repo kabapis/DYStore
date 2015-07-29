@@ -13,6 +13,8 @@
 #import "UIView+AEBHandyAutoLayout.h"
 #import "UIFont+Extension.h"
 #import "Banner.h"//banner 广告展示页面
+#import "HttpRequestTool.h"// the base of AFNetworking encapsulation Http tool
+
 
 #ifdef DEBUG // 处于开发阶段
 #define DBLog(...) NSLog(__VA_ARGS__)

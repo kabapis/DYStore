@@ -22,17 +22,26 @@
     //创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
+
+    
+    //create TabBar
+    [self createTabBar];
+    
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+}
+
+#pragma mark TabBar and Application Appearance
+
+-(void)createTabBar
+{
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     TabBarController *tab = [[TabBarController alloc] init];
-//    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:tab];
     self.window.rootViewController = tab;
-    
-    [self.window makeKeyAndVisible];
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

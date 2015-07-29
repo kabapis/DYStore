@@ -21,8 +21,8 @@
 		18BD26C11B68859B00CE4F00 /* UrlImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26BA1B68859B00CE4F00 /* UrlImageButton.m */; };
 		18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26BC1B68859B00CE4F00 /* UrlImageView.m */; };
 		18BD26C51B689A1500CE4F00 /* BannerSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */; };
-		18E1B8B31B660C740034C440 /* oo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B8B21B660C740034C440 /* oo.m */; };
 		18F0C7E21B68C44700D1BDBF /* bannerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C7E11B68C44700D1BDBF /* bannerImage.png */; };
+		18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */; };
 		1F8445F81B6783DB002CDC7C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8445F71B6783DB002CDC7C /* NSString+Extension.m */; };
 		1F9B97011B6880EE00A4F81F /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96EE1B6880EE00A4F81F /* HomeController.m */; };
 		1F9B97021B6880EE00A4F81F /* endorsementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96F21B6880EE00A4F81F /* endorsementView.m */; };
@@ -90,9 +90,9 @@
 		18BD26BC1B68859B00CE4F00 /* UrlImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlImageView.m; sourceTree = "<group>"; };
 		18BD26C31B689A1500CE4F00 /* BannerSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerSegmentBar.h; sourceTree = "<group>"; };
 		18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerSegmentBar.m; sourceTree = "<group>"; };
-		18E1B8B11B660C740034C440 /* oo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oo.h; sourceTree = "<group>"; };
-		18E1B8B21B660C740034C440 /* oo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oo.m; sourceTree = "<group>"; };
 		18F0C7E11B68C44700D1BDBF /* bannerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerImage.png; sourceTree = "<group>"; };
+		18F0C7E41B68D07600D1BDBF /* HttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestTool.h; sourceTree = "<group>"; };
+		18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
 		1F8445F61B6783DB002CDC7C /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		1F8445F71B6783DB002CDC7C /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		1F9B96ED1B6880EE00A4F81F /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
@@ -190,8 +190,7 @@
 		180F00F71B6609CE00335249 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				18E1B8B11B660C740034C440 /* oo.h */,
-				18E1B8B21B660C740034C440 /* oo.m */,
+				18F0C7E31B68D04100D1BDBF /* HttpRequest */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -312,6 +311,15 @@
 				18F0C7E11B68C44700D1BDBF /* bannerImage.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		18F0C7E31B68D04100D1BDBF /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				18F0C7E41B68D07600D1BDBF /* HttpRequestTool.h */,
+				18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */,
+			);
+			path = HttpRequest;
 			sourceTree = "<group>";
 		};
 		1F8445D71B675200002CDC7C /* CMView */ = {
@@ -629,7 +637,7 @@
 				18BD26AA1B68853900CE4F00 /* BanInnerImage.m in Sources */,
 				1F9B97071B6880EE00A4F81F /* newEdorsementView.m in Sources */,
 				18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */,
-				18E1B8B31B660C740034C440 /* oo.m in Sources */,
+				18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */,
 				1F9B97081B6880EE00A4F81F /* recommendProductsView.m in Sources */,
 				180F00FC1B6609CE00335249 /* AppDelegate.m in Sources */,
 				18BD26C01B68859B00CE4F00 /* SDWebImageManager.m in Sources */,
