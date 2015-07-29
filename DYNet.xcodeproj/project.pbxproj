@@ -22,6 +22,7 @@
 		18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26BC1B68859B00CE4F00 /* UrlImageView.m */; };
 		18BD26C51B689A1500CE4F00 /* BannerSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */; };
 		18E1B8B31B660C740034C440 /* oo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B8B21B660C740034C440 /* oo.m */; };
+		18F0C7E21B68C44700D1BDBF /* bannerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C7E11B68C44700D1BDBF /* bannerImage.png */; };
 		1F8445F81B6783DB002CDC7C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8445F71B6783DB002CDC7C /* NSString+Extension.m */; };
 		1F9B97011B6880EE00A4F81F /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96EE1B6880EE00A4F81F /* HomeController.m */; };
 		1F9B97021B6880EE00A4F81F /* endorsementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96F21B6880EE00A4F81F /* endorsementView.m */; };
@@ -89,6 +90,7 @@
 		18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerSegmentBar.m; sourceTree = "<group>"; };
 		18E1B8B11B660C740034C440 /* oo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oo.h; sourceTree = "<group>"; };
 		18E1B8B21B660C740034C440 /* oo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oo.m; sourceTree = "<group>"; };
+		18F0C7E11B68C44700D1BDBF /* bannerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerImage.png; sourceTree = "<group>"; };
 		1F8445F61B6783DB002CDC7C /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		1F8445F71B6783DB002CDC7C /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		1F9B96ED1B6880EE00A4F81F /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
@@ -167,9 +169,9 @@
 		180F00F61B6609CE00335249 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1FC81A511B660EC900D82D43 /* Home */,
 				1FC81A531B660ED000D82D43 /* Activity */,
 				1FC81A541B660ED000D82D43 /* FigureShow */,
-				1FC81A511B660EC900D82D43 /* Home */,
 				1FC81A521B660EC900D82D43 /* MyProfile */,
 				1FC81A731B66172B00D82D43 /* Main */,
 			);
@@ -216,6 +218,7 @@
 		186869701B6606DB0052BF66 /* DYNet */ = {
 			isa = PBXGroup;
 			children = (
+				18F0C7E01B68C41D00D1BDBF /* Images */,
 				180F00F51B6609CE00335249 /* Category */,
 				180F00F61B6609CE00335249 /* Class */,
 				180F00F71B6609CE00335249 /* Lib */,
@@ -290,6 +293,14 @@
 				18BD26BC1B68859B00CE4F00 /* UrlImageView.m */,
 			);
 			path = URLImage;
+			sourceTree = "<group>";
+		};
+		18F0C7E01B68C41D00D1BDBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18F0C7E11B68C44700D1BDBF /* bannerImage.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		1F8445D71B675200002CDC7C /* CMView */ = {
@@ -493,6 +504,7 @@
 				1FC81A801B662EEC00D82D43 /* 方正准圆简体.TTF in Resources */,
 				1868697F1B6606DB0052BF66 /* Images.xcassets in Resources */,
 				180F00FD1B6609CE00335249 /* Main.storyboard in Resources */,
+				18F0C7E21B68C44700D1BDBF /* bannerImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
