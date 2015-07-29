@@ -12,6 +12,8 @@
 #import "recommendProductsView.h"
 #import "FigureShowView.h"
 
+#define BannerHeight 125
+
 @interface HomeController ()<BannerViewDelegate>
 
 @property (nonatomic,strong) UIScrollView *scrollView;  /**<整体scrollView */
@@ -47,7 +49,7 @@
     NSMutableArray * imageArray = [[NSMutableArray alloc] initWithObjects:@"bannerImage",@"bannerImage",@"bannerImage", nil];
     //NSMutableArray *imageArray=[[NSMutableArray alloc] initWithObjects:@"http://ww1.sinaimg.cn/large/53e0c4edjw1dy3qf6n17xj.jpg",@"http://www.ynwssn.com/file/upload/201106/30/15-54-54-98-45.jpg.middle.jpg",@"http://www.ynwssn.com/file/upload/201106/30/15-54-54-98-45.jpg.middle.jpg",@"http://www.ynwssn.com/file/upload/201106/30/15-54-54-98-45.jpg.middle.jpg", nil];
     
-    _banner = [[Banner alloc] createBannerWithImageArray:nil HeightBanner:BannerHeight ViewX:0 ViewY:0];
+    _banner = [[Banner alloc] createBannerWithImageArray:nil HeightBanner:BannerHeight ViewX:0 ViewY:0 PageControllerStyle:BannerPageControlleSegmentStyle];
     [_banner setUpWithBannerImageArray:imageArray];
     _banner.delegate  =self;
     [_scrollView addSubview:_banner];

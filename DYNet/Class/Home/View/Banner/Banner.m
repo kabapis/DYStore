@@ -41,22 +41,24 @@
     return self;
 }
 
--(instancetype)createBannerWithImageArray:(NSMutableArray *)imgArr HeightBanner:(CGFloat)heightBanner ViewX:(float)X ViewY:(float)Y
+-(instancetype)createBannerWithImageArray:(NSMutableArray *)imgArr HeightBanner:(CGFloat)heightBanner ViewX:(float)X ViewY:(float)Y PageControllerStyle:(BannerPageControllerStyle)style
 {
     if (self==[super initWithFrame:CGRectMake(X, Y, Width_Banner, heightBanner)]) {
         //initialize code
         page_Number = 0;//set up is 1
         height_Banner = heightBanner;
         viewsMutableArray = [@[] mutableCopy];
+        _pageControllerStyle = style;
         if (imgArr!=nil) {
             [self createViewsWithImageArray:imgArr];
-            NSLog(@"1111111");
+            
 
         }
     }
     
     return self;
 }
+
 
 #pragma mark init segment 
 
@@ -65,7 +67,6 @@
     _segment = [[BannerSegmentBar alloc] createBannerSegmentBarWithImageCount:count AndSegmentBackgroundColor:RGB(199, 160, 54) ViewX:0 ViewY:height_Banner-BannerSegmentHeight ViewHeight:BannerSegmentHeight];
     [self addSubview:_segment];
 }
-
 
 #pragma mark setUpWithImg
 
@@ -94,18 +95,32 @@
     Banner_ScrollView.contentOffset  = CGPointMake(0, 0);
     [self addSubview:Banner_ScrollView];
     
-    //create segment view
-    [self initSegmentWithImgCount:image_Number];
+    switch (_pageControllerStyle) {
+        case BannerPageControlleDefaultStyle:
+        {
+            pageController = [[UIPageControl alloc] initWithFrame:CGRectMake(0, height_Banner-50, self.frame.size.width ,50)];
+            pageController.currentPage = 0;
+            pageController.numberOfPages = image_Number;
+            
+            pageController.backgroundColor = [UIColor clearColor];
+            pageController.currentPageIndicatorTintColor = [UIColor whiteColor];
+            pageController.pageIndicatorTintColor = [UIColor lightGrayColor];
+            [self addSubview:pageController];
+
+        }
+            break;
+            
+            case BannerPageControlleSegmentStyle:
+        {
+            //create segment view
+            [self initSegmentWithImgCount:image_Number];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
-    
-//    pageController = [[UIPageControl alloc] initWithFrame:CGRectMake(0, height_Banner-50, self.frame.size.width ,50)];
-//    pageController.currentPage = 0;
-//    pageController.numberOfPages = image_Number;
-//    
-//    pageController.backgroundColor = [UIColor clearColor];
-//    pageController.currentPageIndicatorTintColor = [UIColor whiteColor];
-//    pageController.pageIndicatorTintColor = [UIColor lightGrayColor];
-//    [self addSubview:pageController];
     
     //waiting for writing runloop.........
     
@@ -229,11 +244,25 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //pageController index change
-    //pageController.currentPage = [self getValueNextPageIndexWithPageIndex:page_Number];
+    switch (_pageControllerStyle) {
+        case BannerPageControlleDefaultStyle:
+        {
+            //pageController index change
+            pageController.currentPage = [self getValueNextPageIndexWithPageIndex:page_Number];
+        }
+            break;
+            
+        case BannerPageControlleSegmentStyle:
+        {
+            //segment index change
+            [_segment changeBannerSegmentFrameWithIndex:[self getValueNextPageIndexWithPageIndex:page_Number]];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
-    //segment index change
-    [_segment changeBannerSegmentFrameWithIndex:[self getValueNextPageIndexWithPageIndex:page_Number]];
     
     if (scrollView.contentOffset.x>=2*CGRectGetWidth(scrollView.frame)) {
         page_Number = [self getValueNextPageIndexWithPageIndex:page_Number+1];

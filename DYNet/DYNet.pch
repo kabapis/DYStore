@@ -32,6 +32,4 @@
 #define mainScreenW [UIScreen mainScreen].bounds.size.width
 #define mainScreenH [UIScreen mainScreen].bounds.size.height
 
-#define BannerHeight 125
-
 #endif

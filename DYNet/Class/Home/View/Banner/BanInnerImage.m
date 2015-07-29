@@ -27,7 +27,7 @@
 
 -(instancetype)createImageWithImgString:(BanImageStyle )imageStyle Image:(NSString *)imageString ImageX:(CGFloat)X ImageY:(CGFloat)Y Height:(CGFloat)height
 {
-    if (self == [super initWithFrame:CGRectMake(X, Y, 320, height)]) {
+    if (self == [super initWithFrame:CGRectMake(X, Y, mainScreenW, height)]) {
         //init code
         self.DefaultHeight = height;
         
@@ -53,9 +53,10 @@
 
 -(void)setImageWithURLImageString:(NSString *)imageString
 {
-    UrlImageButton *imageView = [[UrlImageButton alloc]initWithFrame:CGRectMake(0, 0, 320, self.DefaultHeight)];
+    UrlImageButton *imageView = [[UrlImageButton alloc]initWithFrame:CGRectMake(0, 0, mainScreenW, self.DefaultHeight)];
     [imageView setImageFromUrl:YES withUrl:imageString];
     imageView.adjustsImageWhenHighlighted = NO;
+    imageView.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [imageView addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:imageView];
@@ -66,7 +67,7 @@
 {
     UrlImageButton *imageView = [[UrlImageButton alloc]initWithFrame:CGRectMake(0, 0, 320, self.DefaultHeight)];
     [imageView setBackgroundImage:[UIImage imageNamed:imageStr] forState:0];
-    imageView.contentMode  = UIViewContentModeScaleToFill;
+    imageView.imageView.contentMode  = UIViewContentModeScaleToFill;
     imageView.adjustsImageWhenHighlighted = NO;
     [imageView addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:imageView];

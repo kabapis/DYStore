@@ -12,6 +12,11 @@
 
 #define BannerSegmentHeight 4
 
+typedef NS_ENUM(NSInteger, BannerPageControllerStyle) {
+    BannerPageControlleDefaultStyle,
+    BannerPageControlleSegmentStyle,
+};
+
 @protocol BannerViewDelegate <NSObject>
 -(void)clickBannerView:(NSInteger)index;
 
@@ -22,7 +27,8 @@
 @property (nonatomic ,strong) BannerSegmentBar * segment;
 @property (nonatomic ,strong) NSMutableArray * imgArr ;
 @property (nonatomic ,assign) CGFloat height_banner ;
--(instancetype)createBannerWithImageArray:(NSMutableArray *)imgArr HeightBanner:(CGFloat)heightBanner ViewX:(float)X ViewY:(float)Y;
+@property (nonatomic ,assign) BannerPageControllerStyle pageControllerStyle;
+-(instancetype)createBannerWithImageArray:(NSMutableArray *)imgArr HeightBanner:(CGFloat)heightBanner ViewX:(float)X ViewY:(float)Y PageControllerStyle:(BannerPageControllerStyle)style;
 
 -(void)setUpWithBannerImageArray:(NSMutableArray *)imgArr;
 
