@@ -1,0 +1,37 @@
+//
+//  DYNet.pch
+//  DYNet
+//
+//  Created by MyMac on 15/7/27.
+//  Copyright (c) 2015年 Apple. All rights reserved.
+//
+
+#ifndef DYNet_DYNet_pch
+#define DYNet_DYNet_pch
+
+#import "UIView+LayoutMethods.h"
+#import "UIView+AEBHandyAutoLayout.h"
+#import "UIFont+Extension.h"
+#import "Banner.h"//banner 广告展示页面
+
+#ifdef DEBUG // 处于开发阶段
+#define DBLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define DBLog(...)
+#endif
+
+//RGB颜色
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define RandomRGB RGB(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
+#define mainScreenW [UIScreen mainScreen].bounds.size.width
+#define mainScreenH [UIScreen mainScreen].bounds.size.height
+
+#define BannerHeight 150
+
+#endif
