@@ -16,8 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    self.view.backgroundColor = RandomRGB;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -31,7 +31,6 @@
 		1F9B97061B6880EE00A4F81F /* newEdorsementItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96FC1B6880EE00A4F81F /* newEdorsementItem.m */; };
 		1F9B97071B6880EE00A4F81F /* newEdorsementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B96FE1B6880EE00A4F81F /* newEdorsementView.m */; };
 		1F9B97081B6880EE00A4F81F /* recommendProductsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B97001B6880EE00A4F81F /* recommendProductsView.m */; };
-		1F9B970F1B68A25900A4F81F /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B970E1B68A25900A4F81F /* LoginController.m */; };
 		1FC81A571B660EE200D82D43 /* ActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC81A561B660EE200D82D43 /* ActivityController.m */; };
 		1FC81A5A1B660EFE00D82D43 /* FigureShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC81A591B660EFE00D82D43 /* FigureShowController.m */; };
 		1FC81A601B660F1C00D82D43 /* MyProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC81A5F1B660F1C00D82D43 /* MyProfileController.m */; };
@@ -108,8 +107,6 @@
 		1F9B96FE1B6880EE00A4F81F /* newEdorsementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newEdorsementView.m; sourceTree = "<group>"; };
 		1F9B96FF1B6880EE00A4F81F /* recommendProductsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recommendProductsView.h; sourceTree = "<group>"; };
 		1F9B97001B6880EE00A4F81F /* recommendProductsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recommendProductsView.m; sourceTree = "<group>"; };
-		1F9B970D1B68A25900A4F81F /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		1F9B970E1B68A25900A4F81F /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		1FC81A551B660EE200D82D43 /* ActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityController.h; sourceTree = "<group>"; };
 		1FC81A561B660EE200D82D43 /* ActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityController.m; sourceTree = "<group>"; };
 		1FC81A581B660EFE00D82D43 /* FigureShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FigureShowController.h; sourceTree = "<group>"; };
@@ -170,7 +167,6 @@
 		180F00F61B6609CE00335249 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				1F9B97091B68A23C00A4F81F /* LoginRegister */,
 				1FC81A531B660ED000D82D43 /* Activity */,
 				1FC81A541B660ED000D82D43 /* FigureShow */,
 				1FC81A511B660EC900D82D43 /* Home */,
@@ -357,39 +353,6 @@
 			path = newEdorsementView;
 			sourceTree = "<group>";
 		};
-		1F9B97091B68A23C00A4F81F /* LoginRegister */ = {
-			isa = PBXGroup;
-			children = (
-				1F9B970A1B68A23C00A4F81F /* Controller */,
-				1F9B970B1B68A23C00A4F81F /* Model */,
-				1F9B970C1B68A23C00A4F81F /* View */,
-			);
-			path = LoginRegister;
-			sourceTree = "<group>";
-		};
-		1F9B970A1B68A23C00A4F81F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1F9B970D1B68A25900A4F81F /* LoginController.h */,
-				1F9B970E1B68A25900A4F81F /* LoginController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		1F9B970B1B68A23C00A4F81F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1F9B970C1B68A23C00A4F81F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1FC81A511B660EC900D82D43 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,9 +512,6 @@
 			files = (
 				1FC81A6B1B660F9700D82D43 /* UIBarButtonItem+Extension.m in Sources */,
 				18BD26C11B68859B00CE4F00 /* UrlImageButton.m in Sources */,
-=======
-				1F9B970F1B68A25900A4F81F /* LoginController.m in Sources */,
->>>>>>> Stashed changes
 				1FC81A5A1B660EFE00D82D43 /* FigureShowController.m in Sources */,
 				1FC81A601B660F1C00D82D43 /* MyProfileController.m in Sources */,
 				1F9B97041B6880EE00A4F81F /* FigureShowView.m in Sources */,
