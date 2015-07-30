@@ -23,6 +23,7 @@
 		18BD26C51B689A1500CE4F00 /* BannerSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */; };
 		18EC12211B69C2F800CDAAD8 /* MyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC12201B69C2F800CDAAD8 /* MyHUD.m */; };
 		18EC122A1B69FB5500CDAAD8 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC12291B69FB5500CDAAD8 /* CustomURLCache.m */; };
+		18EC122E1B6A08C600CDAAD8 /* YQLSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC122D1B6A08C600CDAAD8 /* YQLSQLite.m */; };
 		18F0C7E21B68C44700D1BDBF /* bannerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C7E11B68C44700D1BDBF /* bannerImage.png */; };
 		18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */; };
 		1F8445F81B6783DB002CDC7C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8445F71B6783DB002CDC7C /* NSString+Extension.m */; };
@@ -96,6 +97,8 @@
 		18EC12201B69C2F800CDAAD8 /* MyHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHUD.m; sourceTree = "<group>"; };
 		18EC12281B69FB5500CDAAD8 /* CustomURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomURLCache.h; sourceTree = "<group>"; };
 		18EC12291B69FB5500CDAAD8 /* CustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomURLCache.m; sourceTree = "<group>"; };
+		18EC122C1B6A08C600CDAAD8 /* YQLSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQLSQLite.h; sourceTree = "<group>"; };
+		18EC122D1B6A08C600CDAAD8 /* YQLSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQLSQLite.m; sourceTree = "<group>"; };
 		18F0C7E11B68C44700D1BDBF /* bannerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerImage.png; sourceTree = "<group>"; };
 		18F0C7E41B68D07600D1BDBF /* HttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestTool.h; sourceTree = "<group>"; };
 		18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		180F00F71B6609CE00335249 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18EC122B1B6A088F00CDAAD8 /* YQLSqliteDataBase */,
 				18EC121E1B69C2E300CDAAD8 /* MyHUD */,
 				18F0C7E31B68D04100D1BDBF /* HttpRequest */,
 			);
@@ -319,6 +323,15 @@
 				18EC12201B69C2F800CDAAD8 /* MyHUD.m */,
 			);
 			path = MyHUD;
+			sourceTree = "<group>";
+		};
+		18EC122B1B6A088F00CDAAD8 /* YQLSqliteDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				18EC122C1B6A08C600CDAAD8 /* YQLSQLite.h */,
+				18EC122D1B6A08C600CDAAD8 /* YQLSQLite.m */,
+			);
+			path = YQLSqliteDataBase;
 			sourceTree = "<group>";
 		};
 		18F0C7E01B68C41D00D1BDBF /* Images */ = {
@@ -668,6 +681,7 @@
 				1F9B974F1B68CAD200A4F81F /* LoginController.m in Sources */,
 				1FC81A571B660EE200D82D43 /* ActivityController.m in Sources */,
 				1F9B97021B6880EE00A4F81F /* endorsementView.m in Sources */,
+				18EC122E1B6A08C600CDAAD8 /* YQLSQLite.m in Sources */,
 				1FC81A791B66176B00D82D43 /* NavigationController.m in Sources */,
 				1FC81A7A1B66176B00D82D43 /* TabBarController.m in Sources */,
 				18BD26C51B689A1500CE4F00 /* BannerSegmentBar.m in Sources */,
