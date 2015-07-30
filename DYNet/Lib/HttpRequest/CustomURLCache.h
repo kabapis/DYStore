@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+ prams writing in th appdelegate to setting cache
+ */
+
 @interface CustomURLCache : NSURLCache
 + (CustomURLCache *)standardURLCache;
 
