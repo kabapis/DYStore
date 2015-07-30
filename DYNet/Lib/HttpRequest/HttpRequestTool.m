@@ -54,12 +54,15 @@
          1.对图片进行上传
          2.图片路径由后台控制，是否添加时间
          3.对图片的大小、上传方式是否有限制
-         4.NSData
+         4.NSData，图片类型为UIImage
          */
         //waiting for writing........
         for (int i =0; i<imgArray.count; i++) {
-            
-            //[formData appendPartWithFileData:<#(NSData *)#> name:<#(NSString *)#> fileName:<#(NSString *)#> mimeType:<#(NSString *)#>]
+            UIImage * image = [imgArray objectAtIndex:i];
+            NSData * imageData = UIImageJPEGRepresentation(image, 1.0f);
+            NSString * nameString = @"uploadImage";
+            NSString * fileName = [NSString stringWithFormat:@"upload%d",i];
+            [formData appendPartWithFileData:imageData name:nameString fileName:fileName mimeType:@"image/jpeg"];
         }
         
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {

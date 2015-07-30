@@ -21,6 +21,7 @@
 		18BD26C11B68859B00CE4F00 /* UrlImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26BA1B68859B00CE4F00 /* UrlImageButton.m */; };
 		18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26BC1B68859B00CE4F00 /* UrlImageView.m */; };
 		18BD26C51B689A1500CE4F00 /* BannerSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */; };
+		18EC12211B69C2F800CDAAD8 /* MyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC12201B69C2F800CDAAD8 /* MyHUD.m */; };
 		18F0C7E21B68C44700D1BDBF /* bannerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0C7E11B68C44700D1BDBF /* bannerImage.png */; };
 		18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */; };
 		1F8445F81B6783DB002CDC7C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8445F71B6783DB002CDC7C /* NSString+Extension.m */; };
@@ -90,6 +91,8 @@
 		18BD26BC1B68859B00CE4F00 /* UrlImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlImageView.m; sourceTree = "<group>"; };
 		18BD26C31B689A1500CE4F00 /* BannerSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerSegmentBar.h; sourceTree = "<group>"; };
 		18BD26C41B689A1500CE4F00 /* BannerSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerSegmentBar.m; sourceTree = "<group>"; };
+		18EC121F1B69C2F800CDAAD8 /* MyHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHUD.h; sourceTree = "<group>"; };
+		18EC12201B69C2F800CDAAD8 /* MyHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHUD.m; sourceTree = "<group>"; };
 		18F0C7E11B68C44700D1BDBF /* bannerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerImage.png; sourceTree = "<group>"; };
 		18F0C7E41B68D07600D1BDBF /* HttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestTool.h; sourceTree = "<group>"; };
 		18F0C7E51B68D07600D1BDBF /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 		180F00F71B6609CE00335249 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18EC121E1B69C2E300CDAAD8 /* MyHUD */,
 				18F0C7E31B68D04100D1BDBF /* HttpRequest */,
 			);
 			path = Lib;
@@ -303,6 +307,15 @@
 				18BD26BC1B68859B00CE4F00 /* UrlImageView.m */,
 			);
 			path = URLImage;
+			sourceTree = "<group>";
+		};
+		18EC121E1B69C2E300CDAAD8 /* MyHUD */ = {
+			isa = PBXGroup;
+			children = (
+				18EC121F1B69C2F800CDAAD8 /* MyHUD.h */,
+				18EC12201B69C2F800CDAAD8 /* MyHUD.m */,
+			);
+			path = MyHUD;
 			sourceTree = "<group>";
 		};
 		18F0C7E01B68C41D00D1BDBF /* Images */ = {
@@ -635,6 +648,7 @@
 				18BD26A91B68853900CE4F00 /* Banner.m in Sources */,
 				18BD26BD1B68859B00CE4F00 /* NSURLAdditions.m in Sources */,
 				18BD26AA1B68853900CE4F00 /* BanInnerImage.m in Sources */,
+				18EC12211B69C2F800CDAAD8 /* MyHUD.m in Sources */,
 				1F9B97071B6880EE00A4F81F /* newEdorsementView.m in Sources */,
 				18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */,
 				18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */,
