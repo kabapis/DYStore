@@ -14,6 +14,9 @@
 {
     [self checkNetWorkStatus];
     
+    //setting cache policy
+    NSURLRequest * request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20];
+    
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -24,10 +27,11 @@
               success  successful information
               failure  failure information
      */
-    [manager POST:url parameters:prams success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        success(responseObject);
+    
+    [manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        success (responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        failure(error);
+        failure (error);
     }];
 }
 
