@@ -27,7 +27,7 @@ static MyHUD * hud;
     return hud;
 }
 
-#pragma mark show hud
+#pragma mark show hud system bring
 
 -(void)showMyHUD:(NSString *)string 
 {
@@ -42,5 +42,11 @@ static MyHUD * hud;
     [alertView dismissWithClickedButtonIndex:0 animated:YES];
 }
 
+#pragma mark the custom hud not system bring
+
+-(void)showMyHUDWithWarning:(NSString *)string
+{
+    //waiting for writing......
+}
 
 @end
