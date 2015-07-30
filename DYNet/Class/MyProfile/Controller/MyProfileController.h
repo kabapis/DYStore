@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CMViewController.h"
 
-@interface MyProfileController : UIViewController
+@interface MyProfileController : CMViewController
 
 @end
