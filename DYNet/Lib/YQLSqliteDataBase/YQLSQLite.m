@@ -112,8 +112,7 @@
     int column;
     char * *pazResult = NULL;
     char * pzErrmsg = NULL;
-    
-    
+
     if (sqlite3_get_table(YQL_sqlite, [query UTF8String], &pazResult, &row, &column, &pzErrmsg)==SQLITE_OK) {
         
         //for the operation
