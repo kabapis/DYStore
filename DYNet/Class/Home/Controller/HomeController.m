@@ -37,7 +37,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.titleLabel setText:@"首页"];
     [self addView];
     [self createViews];
 }

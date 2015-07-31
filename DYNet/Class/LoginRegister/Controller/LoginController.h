@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CMViewController.h"
-
-@interface LoginController : CMViewController
+@interface LoginController : UIViewController
 
 @end

@@ -20,19 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - MBProgressHUD (0.9.1)
-  - sqlite3 (3.8.11):
-    - sqlite3/common (= 3.8.11)
-  - sqlite3/common (3.8.11)
 
 DEPENDENCIES:
   - AFNetworking
-  - MBProgressHUD (~> 0.9.1)
-  - sqlite3 (~> 3.8.11)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  sqlite3: 8459c89dc109c6bfd301584a3b7af6adff68628d
 
 COCOAPODS: 0.38.2

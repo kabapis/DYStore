@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "TabBarController.h"
 #import "NavigationController.h"
-#import "CustomURLCache.h"
+
 @interface AppDelegate ()
 
 @end
@@ -27,10 +27,6 @@
     //create TabBar
     [self createTabBar];
     
-    //setting cache
-    [self setCache];
-    
-    
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -46,14 +42,6 @@
     
     TabBarController *tab = [[TabBarController alloc] init];
     self.window.rootViewController = tab;
-}
-
-#pragma mark setting URLRequest cache
-
-- (void)setCache
-{
-    CustomURLCache * cache = [[CustomURLCache alloc] initWithMemoryCapacity:2*1024*1024 diskCapacity:0 diskPath:nil];
-    [NSURLCache setSharedURLCache:cache ];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

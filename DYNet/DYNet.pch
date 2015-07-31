@@ -12,7 +12,6 @@
 #import "UIView+LayoutMethods.h"
 #import "UIView+AEBHandyAutoLayout.h"
 #import "UIFont+Extension.h"
-#import "CommonUI.h"
 #import "Banner.h"//banner 广告展示页面
 #import "HttpRequestTool.h"// the base of AFNetworking encapsulation Http tool
 
@@ -34,9 +33,5 @@
 
 #define mainScreenW [UIScreen mainScreen].bounds.size.width
 #define mainScreenH [UIScreen mainScreen].bounds.size.height
-
-#define SINGLE_LINE_WIDTH           (1 / [UIScreen mainScreen].scale)
-#define SINGLE_LINE_ADJUST_OFFSET   ((1 / [UIScreen mainScreen].scale) / 2)
-
 
 #endif
