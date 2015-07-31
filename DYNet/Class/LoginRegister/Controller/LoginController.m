@@ -32,11 +32,6 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = RGB(238, 238, 238);
-    [self.navigationItem setBackBarButtonItem:nil];
-    [self.navigationItem setLeftBarButtonItem:[CommonUI navItem_Back:self action:@selector(back)]];
-    [self.titleLabel setText:@"登录"];
-    
-    
     
     [self.view addSubview:self.userNameBg];
     [self.view addSubview:self.pwdBg];
@@ -67,12 +62,6 @@
 
 - (void)weixinLoginClick{
     DBLog(@"微信登录");
-}
-
-- (void)back{
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        
-    }];
 }
 
 

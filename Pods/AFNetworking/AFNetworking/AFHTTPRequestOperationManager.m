@@ -182,7 +182,6 @@
 {
     NSError *serializationError = nil;
     NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
-    request.cachePolicy = NSURLRequestUseProtocolCachePolicy;//这里做下缓存处理
     if (serializationError) {
         if (failure) {
 #pragma clang diagnostic push
