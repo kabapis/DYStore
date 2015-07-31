@@ -14,9 +14,6 @@
 {
     [self checkNetWorkStatus];
     
-    //setting cache policy
-    NSURLRequest * request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20];
-    
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -27,11 +24,10 @@
               success  successful information
               failure  failure information
      */
-    
-    [manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        success (responseObject);
+    [manager POST:url parameters:prams success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        success(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        failure (error);
+        failure(error);
     }];
 }
 
@@ -58,15 +54,12 @@
          1.对图片进行上传
          2.图片路径由后台控制，是否添加时间
          3.对图片的大小、上传方式是否有限制
-         4.NSData，图片类型为UIImage
+         4.NSData
          */
         //waiting for writing........
         for (int i =0; i<imgArray.count; i++) {
-            UIImage * image = [imgArray objectAtIndex:i];
-            NSData * imageData = UIImageJPEGRepresentation(image, 1.0f);
-            NSString * nameString = @"uploadImage";
-            NSString * fileName = [NSString stringWithFormat:@"upload%d",i];
-            [formData appendPartWithFileData:imageData name:nameString fileName:fileName mimeType:@"image/jpeg"];
+            
+            //[formData appendPartWithFileData:<#(NSData *)#> name:<#(NSString *)#> fileName:<#(NSString *)#> mimeType:<#(NSString *)#>]
         }
         
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
