@@ -24,7 +24,6 @@
 //创建表
 -(BOOL)create_YqlTable:(NSString *)yqlTable;
 
-
 //关闭数据库
 -(void)closeDataBase;
 
