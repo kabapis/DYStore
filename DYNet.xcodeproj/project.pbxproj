@@ -12,6 +12,8 @@
 		186869741B6606DB0052BF66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186869731B6606DB0052BF66 /* main.m */; };
 		1868697F1B6606DB0052BF66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1868697E1B6606DB0052BF66 /* Images.xcassets */; };
 		1868698E1B6606DB0052BF66 /* DYNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868698D1B6606DB0052BF66 /* DYNetTests.m */; };
+		186E5A861B6B19FC0025E8AC /* YQLSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E5A851B6B19FC0025E8AC /* YQLSQLite.m */; };
+		186E5A891B6B1A030025E8AC /* MyHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E5A881B6B1A030025E8AC /* MyHUD.m */; };
 		18BD26A91B68853900CE4F00 /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26A61B68853900CE4F00 /* Banner.m */; };
 		18BD26AA1B68853900CE4F00 /* BanInnerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26A81B68853900CE4F00 /* BanInnerImage.m */; };
 		18BD26BD1B68859B00CE4F00 /* NSURLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD26AE1B68859B00CE4F00 /* NSURLAdditions.m */; };
@@ -75,6 +77,10 @@
 		186869871B6606DB0052BF66 /* DYNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1868698C1B6606DB0052BF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1868698D1B6606DB0052BF66 /* DYNetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYNetTests.m; sourceTree = "<group>"; };
+		186E5A841B6B19FC0025E8AC /* YQLSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQLSQLite.h; sourceTree = "<group>"; };
+		186E5A851B6B19FC0025E8AC /* YQLSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQLSQLite.m; sourceTree = "<group>"; };
+		186E5A871B6B1A030025E8AC /* MyHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHUD.h; sourceTree = "<group>"; };
+		186E5A881B6B1A030025E8AC /* MyHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHUD.m; sourceTree = "<group>"; };
 		18BD26A51B68853900CE4F00 /* Banner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
 		18BD26A61B68853900CE4F00 /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
 		18BD26A71B68853900CE4F00 /* BanInnerImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BanInnerImage.h; sourceTree = "<group>"; };
@@ -214,6 +220,8 @@
 		180F00F71B6609CE00335249 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				186E5A821B6B19F50025E8AC /* MyHUD */,
+				186E5A831B6B19F50025E8AC /* YQLSqliteDataBase */,
 				18F0C7E31B68D04100D1BDBF /* HttpRequest */,
 			);
 			path = Lib;
@@ -289,6 +297,24 @@
 				1868698C1B6606DB0052BF66 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		186E5A821B6B19F50025E8AC /* MyHUD */ = {
+			isa = PBXGroup;
+			children = (
+				186E5A871B6B1A030025E8AC /* MyHUD.h */,
+				186E5A881B6B1A030025E8AC /* MyHUD.m */,
+			);
+			path = MyHUD;
+			sourceTree = "<group>";
+		};
+		186E5A831B6B19F50025E8AC /* YQLSqliteDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				186E5A841B6B19FC0025E8AC /* YQLSQLite.h */,
+				186E5A851B6B19FC0025E8AC /* YQLSQLite.m */,
+			);
+			path = YQLSqliteDataBase;
 			sourceTree = "<group>";
 		};
 		18BD26A41B68853000CE4F00 /* Banner */ = {
@@ -709,6 +735,7 @@
 				1F9B97071B6880EE00A4F81F /* newEdorsementView.m in Sources */,
 				18BD26C21B68859B00CE4F00 /* UrlImageView.m in Sources */,
 				18F0C7E61B68D07600D1BDBF /* HttpRequestTool.m in Sources */,
+				186E5A891B6B1A030025E8AC /* MyHUD.m in Sources */,
 				1FAE4D151B6A0AE600BACC72 /* CMStaticCell.m in Sources */,
 				1F9B97081B6880EE00A4F81F /* recommendProductsView.m in Sources */,
 				1FAE4D121B6A0AA700BACC72 /* CMStaticCellItem.m in Sources */,
@@ -736,6 +763,7 @@
 				1F9B97051B6880EE00A4F81F /* HomeHeader.m in Sources */,
 				1FAE4D0E1B6A09F100BACC72 /* CMTabBar.m in Sources */,
 				18BD26BE1B68859B00CE4F00 /* SDImageCache.m in Sources */,
+				186E5A861B6B19FC0025E8AC /* YQLSQLite.m in Sources */,
 				1FAE4D021B69F0F200BACC72 /* MyProfileController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
